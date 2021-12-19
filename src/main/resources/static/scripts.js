@@ -185,7 +185,7 @@ async function addUser(event){
     cellAge.innerHTML = user.age
     cellEmail.innerHTML = user.email
     cellRoles.innerHTML = rolesText
-    cellRoles.innerHTML = cellRoles.innerHTML.replace(",", " ")
+    cellRoles.innerHTML = cellRoles.innerHTML.replaceAll(",", " ")
     cellEditButtom.appendChild(buttonEdit)
     cellDeleteButtom.appendChild(buttonDelete)
 
@@ -210,7 +210,7 @@ async function addUser(event){
         cellAge.innerHTML = user.age
         cellEmail.innerHTML = user.email
         cellRoles.innerHTML = rolesText
-        cellRoles.innerHTML = cellRoles.innerHTML.replace(",", " ")
+        cellRoles.innerHTML = cellRoles.innerHTML.replaceAll(",", " ")
     }
 
     window.addUserForm.reset()
@@ -267,7 +267,7 @@ async function editUser(event){
     varRow.cells[3].innerText = age
     varRow.cells[4].innerText = email
     varRow.cells[5].innerText = rolesText
-    varRow.cells[5].innerText = varRow.cells[5].innerText.replace(",", " ")
+    varRow.cells[5].innerText = varRow.cells[5].innerText.replaceAll(",", " ")
 
     var userVarRow = document.querySelector("#userRowid" + id)
 
@@ -296,7 +296,7 @@ async function editUser(event){
             cellAge.innerHTML = age
             cellEmail.innerHTML = email
             cellRoles.innerHTML = rolesText
-            cellRoles.innerHTML = cellRoles.innerHTML.replace(",", " ")
+            cellRoles.innerHTML = cellRoles.innerHTML.replaceAll(",", " ")
 
         }else {
 
@@ -306,7 +306,7 @@ async function editUser(event){
             userVarRow.cells[3].innerText = age
             userVarRow.cells[4].innerText = email
             userVarRow.cells[5].innerText = rolesText
-            userVarRow.cells[5].innerText = varRow.cells[5].innerText.replace(",", " ")
+            userVarRow.cells[5].innerText = userVarRow.cells[5].innerText.replaceAll(",", " ")
         }
     }
 
